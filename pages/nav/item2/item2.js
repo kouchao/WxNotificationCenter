@@ -8,7 +8,7 @@
  * for: 微信小程序通知广播模式类,降低小程序之间的耦合度
  * detail : http://weappdev.com/t/wxnotificationcenter/233
  */
-var WxNotificationCenter = require("../../../WxNotificationCenter/WxNotificationCenter.js");
+var WxNotificationCenter = require("../../../src/index.js");
 Page({
   data:{
     
