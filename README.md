@@ -8,7 +8,7 @@ WxNotificationCenter - 微信小程序通知广播模式类,降低小程序开�
 
 ## 版本信息
 
-`version 0.1`
+`version 1.0.1`
 
 ## 效果预览
 
@@ -16,6 +16,7 @@ WxNotificationCenter - 微信小程序通知广播模式类,降低小程序开�
 
 ## 使用
  0. (小程序npm参考)[https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html] 
+
  1. copy 文件 `WxNotificationCenter.js` 到你的开发目录中, 或`npm install`
 	```
 	npm i wx-notification-center -S
