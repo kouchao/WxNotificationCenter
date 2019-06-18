@@ -1,6 +1,6 @@
 {
   "name": "wx-notification-center",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WxNotificationCenter - 微信小程序通知广播模式类,降低小程序开发的耦合度",
   "main": "src/index.js",
   "scripts": {

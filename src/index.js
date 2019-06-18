@@ -198,7 +198,7 @@ function cmp(x, y) {
  */
 function log(message, always){
     if(isDebug || always) {
-        log(message)
+        console.log(message)
     }
 }
 
