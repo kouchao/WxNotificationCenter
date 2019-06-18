@@ -3,10 +3,13 @@
  * organization: WeAppDev(微信小程序开发论坛)(http://weappdev.com)
  *               垂直微信小程序开发交流社区
  * 
- * github地址: https://github.com/icindy/WxNotificationCenter
+ * fork自: https://github.com/icindy/WxNotificationCenter
  * 
  * for: 微信小程序通知广播模式类,降低小程序之间的耦合度
  * detail : http://weappdev.com/t/wxnotificationcenter/233
+ * 
+ * modify: kouchao
+ * github地址: https://github.com/kouchao/WxNotificationCenter
  */
 // 存放
 var __notices = [];
@@ -23,9 +26,9 @@ var isDebug = true;
 function addNotification(name, selector, observer) {
     if (name && selector) {
         if(!observer){
-            console.log("addNotification Warning: no observer will can't remove notice");
+            log("addNotification Warning: no observer will can't remove notice", 1);
         }
-        console.log("addNotification:" + name);
+        log("addNotification:" + name);
         var newNotice = {
             name: name,
             selector: selector,
@@ -35,7 +38,7 @@ function addNotification(name, selector, observer) {
         addNotices(newNotice);
 
     } else {
-        console.log("addNotification error: no selector or name");
+        log("addNotification error: no selector or name", 1);
     }
 }
 
@@ -93,7 +96,7 @@ function addNotices(newNotice) {
  */
 
 function removeNotification(name,observer) {
-    console.log("removeNotification:" + name);
+    log("removeNotification:" + name);
     for (var i = 0; i < __notices.length; i++){
       var notice = __notices[i];
       if(notice.name === name){
@@ -117,9 +120,9 @@ function removeNotification(name,observer) {
  */
 
 function postNotificationName(name, info) {
-    console.log("postNotificationName:" + name);
+    log("postNotificationName:" + name);
     if(__notices.length == 0){
-      console.log("postNotificationName error: u hadn't add any notice.");
+        log("postNotificationName error: u hadn't add any notice.", 1);
       return;
     }
 
@@ -183,6 +186,21 @@ function cmp(x, y) {
     }
     return true;
 };
+
+
+/**
+ * log
+ * 打印log
+ * 
+ * 参数:
+ * message: 打印的值
+ * always: 总是打印
+ */
+function log(message, always){
+    if(isDebug || always) {
+        log(message)
+    }
+}
 
 module.exports = {
     addNotification: addNotification,

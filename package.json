@@ -1,0 +1,20 @@
+{
+  "name": "WxNotificationCenter",
+  "version": "1.0.0",
+  "description": "WxNotificationCenter - 微信小程序通知广播模式类,降低小程序开发的耦合度",
+  "main": "WxNotificationCenter/WxNotificationCenter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kouchao/WxNotificationCenter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kouchao/WxNotificationCenter/issues"
+  },
+  "homepage": "https://github.com/kouchao/WxNotificationCenter#readme"
+}
