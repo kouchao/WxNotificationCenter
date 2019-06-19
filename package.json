@@ -11,8 +11,8 @@
     "url": "git+https://github.com/kouchao/WxNotificationCenter.git"
   },
   "keywords": [],
-  "author": "Di",
-  "license": "ISC",
+  "author": "kouchao",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kouchao/WxNotificationCenter/issues"
   },
