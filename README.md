@@ -20,8 +20,7 @@ WxNotificationCenter - 微信小程序通知广播模式类,降低小程序开�
  1. copy 文件 `WxNotificationCenter.js` 到你的开发目录中, 或`npm install`
 	```
 	npm i wx-notification-center -S
-  const WxNotificationCenter = require("wx-notification-center");
-
+	const WxNotificationCenter = require("wx-notification-center");
 	```
 
  2. 引入 `WxNotificationCenter.js` 在你需要的`js`中
